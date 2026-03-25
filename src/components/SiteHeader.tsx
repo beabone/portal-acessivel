@@ -15,7 +15,7 @@ const SiteHeader = () => {
           aria-label="Portal de Acessibilidade — Página inicial"
         >
           <Eye className="text-primary" size={28} strokeWidth={2.5} aria-hidden="true" />
-          <span className="text-lg sm:text-xl font-bold tracking-tight">
+          <span className="text-lg sm:text-xl font-bold tracking-tight" aria-hidden="true">
             Portal de Acessibilidade
           </span>
         </a>
