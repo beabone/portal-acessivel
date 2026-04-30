@@ -3,7 +3,19 @@ import SiteFooter from "@/components/SiteFooter";
 import ContentSection from "@/components/ContentSection";
 import SectionDivider from "@/components/SectionDivider";
 import CaneIcon from "@/components/CaneIcon";
-import { BookOpen, Target, Eye, Users, Brain, Smartphone } from "lucide-react";
+import {
+  Eye,
+  Users,
+  Brain,
+  Smartphone,
+  Volume2,
+  Sparkles,
+  Wrench,
+  Building2,
+  Globe,
+  HeartHandshake,
+  Compass,
+} from "lucide-react";
 
 const Index = () => {
   return (
@@ -29,99 +41,334 @@ const Index = () => {
             <h1 className="text-3xl sm:text-5xl font-bold text-foreground mb-4 leading-tight">
               Tecnologias Assistivas para
               <br />
-              <span className="text-primary">Deficiência Visual</span>
+              <span className="text-primary">Pessoas com Deficiência Visual</span>
             </h1>
             <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto">
               Um portal dedicado à divulgação e análise de tecnologias que promovem
               acessibilidade, autonomia e inclusão social.
             </p>
-          <div className="flex items-center justify-center gap-4 mt-8 text-muted-foreground" aria-hidden="true">
-              <div className="flex items-center gap-1"><CaneIcon size={18} /><span className="text-xs">Bengala</span></div>
-              <div className="flex items-center gap-1"><Users size={18} /><span className="text-xs">Inclusão</span></div>
-              <div className="flex items-center gap-1"><Brain size={18} /><span className="text-xs">IA</span></div>
-              <div className="flex items-center gap-1"><Smartphone size={18} /><span className="text-xs">Apps</span></div>
+            <div
+              className="flex items-center justify-center gap-4 mt-8 text-muted-foreground flex-wrap"
+              aria-hidden="true"
+            >
+              <div className="flex items-center gap-1">
+                <CaneIcon size={18} />
+                <span className="text-xs">Bengala</span>
+              </div>
+              <div className="flex items-center gap-1">
+                <Users size={18} />
+                <span className="text-xs">Inclusão</span>
+              </div>
+              <div className="flex items-center gap-1">
+                <Brain size={18} />
+                <span className="text-xs">IA</span>
+              </div>
+              <div className="flex items-center gap-1">
+                <Smartphone size={18} />
+                <span className="text-xs">Apps</span>
+              </div>
             </div>
           </div>
           {/* Decorative shapes */}
-          <div className="absolute top-0 left-0 w-32 h-32 bg-primary/5 rounded-full -translate-x-1/2 -translate-y-1/2" aria-hidden="true" />
-          <div className="absolute bottom-0 right-0 w-48 h-48 bg-primary/5 rounded-full translate-x-1/3 translate-y-1/3" aria-hidden="true" />
+          <div
+            className="absolute top-0 left-0 w-32 h-32 bg-primary/5 rounded-full -translate-x-1/2 -translate-y-1/2"
+            aria-hidden="true"
+          />
+          <div
+            className="absolute bottom-0 right-0 w-48 h-48 bg-primary/5 rounded-full translate-x-1/3 translate-y-1/3"
+            aria-hidden="true"
+          />
         </section>
 
         {/* Content */}
         <div className="container mx-auto px-4 py-10 sm:py-16 space-y-6 max-w-3xl">
           <ContentSection
-            id="introducao"
-            title="Introdução"
-            icon={<BookOpen size={22} aria-hidden="true" />}
+            id="apresentacao"
+            title="Tecnologias Assistivas e Leitores de Tela"
+            icon={<Volume2 size={22} aria-hidden="true" />}
           >
             <p>
-              Segundo dados do Instituto Brasileiro de Geografia e Estatística (IBGE, 2022),
-              mais de 6,5 milhões de pessoas no Brasil possuem algum tipo de deficiência visual,
-              sendo aproximadamente 6 milhões com baixa visão. Apesar disso, nem todas têm acesso
-              ou conhecimento acerca das tecnologias assistivas disponíveis, as quais podem facilitar
-              a realização de atividades cotidianas e contribuir significativamente para a qualidade de vida.
+              As tecnologias assistivas desempenham um papel essencial na promoção da
+              autonomia, da inclusão social e da qualidade de vida de pessoas com
+              deficiência visual. Elas englobam recursos, ferramentas e serviços que
+              auxiliam na realização de atividades do cotidiano, permitindo maior
+              independência no acesso à informação, comunicação, mobilidade e uso de
+              dispositivos digitais.
             </p>
             <p>
-              Observações realizadas em estudos práticos indicam que muitos indivíduos prezam por sua
-              autonomia e já fazem uso de ferramentas assistivas; contudo, ainda há um potencial expressivo
-              para o desenvolvimento de inovações que ampliem essa independência.
+              Atualmente, uma das principais categorias dessas tecnologias são os{" "}
+              <strong>leitores de tela</strong>, que convertem o conteúdo visual em
+              áudio. Entre os mais utilizados estão:
             </p>
+            <ul className="list-disc pl-6 space-y-3">
+              <li>
+                <strong>VoiceOver</strong> — disponível em dispositivos iOS, descreve
+                todos os elementos exibidos na tela e permite navegação completa por
+                meio de gestos.{" "}
+                <a
+                  href="https://www.apple.com/br/accessibility/vision/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary underline underline-offset-4 hover:no-underline font-semibold"
+                  aria-label="Saiba mais sobre o VoiceOver no site da Apple (abre em nova aba)"
+                >
+                  Saiba mais
+                </a>
+              </li>
+              <li>
+                <strong>TalkBack</strong> — presente em dispositivos Android, oferece
+                feedback por voz, sons e vibração, permitindo interação independente
+                com o celular.{" "}
+                <a
+                  href="https://support.google.com/accessibility/android/answer/6007100"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary underline underline-offset-4 hover:no-underline font-semibold"
+                  aria-label="Saiba mais sobre o TalkBack no suporte do Google (abre em nova aba)"
+                >
+                  Saiba mais
+                </a>
+              </li>
+            </ul>
             <p>
-              Conforme definido pelo Comitê de Ajudas Técnicas (CAT, 2013), a Tecnologia Assistiva é uma
-              área do conhecimento, de característica interdisciplinar, que abrange produtos, recursos,
-              metodologias, estratégias, práticas e serviços com o objetivo de promover a funcionalidade,
-              a atividade e a participação de pessoas com deficiência, incapacidades ou mobilidade reduzida,
-              visando sua autonomia, independência, qualidade de vida e inclusão social.
-            </p>
-            <p>
-              Atualmente, a Inteligência Artificial (IA) tem impulsionado avanços significativos na área da
-              acessibilidade, especialmente no desenvolvimento de tecnologias assistivas. Aplicativos como
-              Seeing AI e Be My AI vêm crescendo gradativamente, oferecendo recursos que auxiliam pessoas com
-              deficiência visual na interpretação do ambiente, como reconhecimento de textos, objetos, pessoas
-              e cenas, contribuindo para maior autonomia e inclusão social.
-            </p>
-            <p>
-              Além disso, existem diversas tecnologias assistivas amplamente reconhecidas que contribuem para a
-              melhoria da qualidade de vida desse público, como leitores de tela, que possibilitam o acesso a
-              conteúdos digitais, e aplicativos voltados à mobilidade e à orientação espacial, que auxiliam na
-              locomoção e na percepção do ambiente.
-            </p>
-            <p>
-              Embora as tecnologias assistivas estejam cada vez mais presentes no cotidiano, muitos recursos
-              ainda são pouco divulgados, o que impede que grande parte da população aproveite seus benefícios.
-              Esta iniciação científica tem como objetivo apresentar as tecnologias assistivas voltadas a pessoas
-              com deficiência visual e realizar uma análise comparativa entre tecnologias selecionadas, evidenciando
-              seus impactos na promoção da acessibilidade e da inclusão social.
+              Essas ferramentas são fundamentais para o acesso a conteúdos digitais,
+              como mensagens, redes sociais, sites e aplicativos.
             </p>
           </ContentSection>
 
           <SectionDivider />
 
           <ContentSection
-            id="objetivo"
-            title="Objetivo"
-            icon={<Target size={22} aria-hidden="true" />}
+            id="ia"
+            title="Tecnologias com Inteligência Artificial"
+            icon={<Sparkles size={22} aria-hidden="true" />}
           >
             <p>
-              Este projeto tem como foco a análise e a comparação das tecnologias assistivas existentes
-              voltadas para pessoas com deficiência visual, utilizando, para isso, material bibliográfico
-              e experiências relatadas por indivíduos que vivenciam essa realidade.
+              Com os avanços da Inteligência Artificial, novas soluções vêm ampliando
+              ainda mais as possibilidades de autonomia.
+            </p>
+            <ul className="list-disc pl-6 space-y-3">
+              <li>
+                <strong>Seeing AI</strong> — aplicativo que utiliza a câmera do celular
+                para descrever textos, pessoas, objetos e ambientes em tempo real,
+                auxiliando na interpretação do mundo ao redor.{" "}
+                <a
+                  href="https://www.microsoft.com/en-us/ai/seeing-ai"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary underline underline-offset-4 hover:no-underline font-semibold"
+                  aria-label="Baixar Seeing AI no site da Microsoft (abre em nova aba)"
+                >
+                  Download
+                </a>
+              </li>
+              <li>
+                <strong>Google Lookout</strong> — oferece funcionalidades semelhantes,
+                permitindo ler documentos, identificar produtos e reconhecer objetos
+                com praticidade.{" "}
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.google.android.apps.accessibility.reveal"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary underline underline-offset-4 hover:no-underline font-semibold"
+                  aria-label="Baixar Google Lookout na Play Store (abre em nova aba)"
+                >
+                  Download
+                </a>
+              </li>
+              <li>
+                <strong>Be My Eyes</strong> — conecta pessoas com deficiência visual a
+                voluntários por meio de chamadas de vídeo, possibilitando ajuda em
+                tarefas do dia a dia.{" "}
+                <a
+                  href="https://www.bemyeyes.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary underline underline-offset-4 hover:no-underline font-semibold"
+                  aria-label="Baixar Be My Eyes no site oficial (abre em nova aba)"
+                >
+                  Download
+                </a>
+              </li>
+            </ul>
+            <p>
+              Essas tecnologias demonstram como a inovação pode contribuir diretamente
+              para a inclusão e independência.
+            </p>
+          </ContentSection>
+
+          <SectionDivider />
+
+          <ContentSection
+            id="recursos"
+            title="Outros Recursos Importantes"
+            icon={<Wrench size={22} aria-hidden="true" />}
+          >
+            <p>
+              Além dos aplicativos, existem diversas soluções que complementam o uso
+              das tecnologias assistivas:
+            </p>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>
+                <strong>Audiodescrição</strong> — transforma informações visuais em
+                narração verbal.
+              </li>
+              <li>
+                <strong>Comandos por voz</strong> — permitem controlar dispositivos sem
+                o uso da visão.
+              </li>
+              <li>
+                <strong>Feedback tátil</strong> — vibrações que auxiliam na navegação.
+              </li>
+              <li>
+                <strong>Tecnologias de mobilidade</strong> — GPS acessível e sistemas
+                de orientação sonora.
+              </li>
+            </ul>
+            <p>
+              Esses recursos tornam a experiência mais acessível, intuitiva e adaptada
+              às diferentes necessidades dos usuários.
+            </p>
+          </ContentSection>
+
+          <SectionDivider />
+
+          <ContentSection
+            id="instituicoes"
+            title="Instituições, Cursos e Apoio"
+            icon={<Building2 size={22} aria-hidden="true" />}
+          >
+            <p>
+              Além das tecnologias, existem instituições que desempenham um papel
+              fundamental na inclusão, oferecendo cursos, capacitação e suporte
+              especializado.
+            </p>
+            <ul className="list-disc pl-6 space-y-3">
+              <li>
+                <strong>Fundação Dorina Nowill para Cegos</strong> — referência
+                nacional na produção de materiais acessíveis e na oferta de programas
+                de educação e inclusão profissional.{" "}
+                <a
+                  href="https://fundacaodorina.org.br/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary underline underline-offset-4 hover:no-underline font-semibold"
+                  aria-label="Acessar site da Fundação Dorina Nowill (abre em nova aba)"
+                >
+                  Acesse
+                </a>
+              </li>
+              <li>
+                <strong>Laramara</strong> — atua no desenvolvimento de autonomia por
+                meio de cursos, orientação e mobilidade, além de apoio às famílias.{" "}
+                <a
+                  href="https://laramara.org.br/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary underline underline-offset-4 hover:no-underline font-semibold"
+                  aria-label="Acessar site da Laramara (abre em nova aba)"
+                >
+                  Acesse
+                </a>
+              </li>
+              <li>
+                <strong>ADEVA</strong> — promove inclusão social por meio de
+                atividades educativas, culturais e cursos de capacitação.{" "}
+                <a
+                  href="https://adeva.org.br/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary underline underline-offset-4 hover:no-underline font-semibold"
+                  aria-label="Acessar site da ADEVA (abre em nova aba)"
+                >
+                  Acesse
+                </a>
+              </li>
+              <li>
+                <strong>Serenidade do Toque</strong> — desenvolve projetos voltados ao
+                bem-estar, autonomia e inclusão, utilizando abordagens sensoriais,
+                educativas e de acolhimento.{" "}
+                <a
+                  href="https://serenidadedotoque.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary underline underline-offset-4 hover:no-underline font-semibold"
+                  aria-label="Acessar site da Serenidade do Toque (abre em nova aba)"
+                >
+                  Acesse
+                </a>
+              </li>
+            </ul>
+            <p>
+              Essas instituições oferecem oportunidades importantes para o aprendizado
+              e o desenvolvimento de habilidades no uso de tecnologias assistivas,
+              contribuindo para a inclusão educacional, social e profissional.
+            </p>
+          </ContentSection>
+
+          <SectionDivider />
+
+          <ContentSection
+            id="acessibilidade-digital"
+            title="Acessibilidade Digital"
+            icon={<Globe size={22} aria-hidden="true" />}
+          >
+            <p>
+              Para garantir que todas essas tecnologias funcionem corretamente, é
+              fundamental que sites e aplicativos sejam desenvolvidos com foco em
+              acessibilidade. As diretrizes da <strong>WCAG</strong> orientam a criação
+              de conteúdos mais inclusivos.
+            </p>
+            <p>Esses princípios garantem que os ambientes digitais sejam:</p>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>Perceptíveis</li>
+              <li>Operáveis</li>
+              <li>Compreensíveis</li>
+              <li>Compatíveis com diferentes tecnologias</li>
+            </ul>
+          </ContentSection>
+
+          <SectionDivider />
+
+          <ContentSection
+            id="compromisso"
+            title="Nosso Compromisso"
+            icon={<HeartHandshake size={22} aria-hidden="true" />}
+          >
+            <p>
+              Este portal foi desenvolvido com base em princípios de design inclusivo,
+              com o objetivo de demonstrar, na prática, como a acessibilidade pode ser
+              aplicada em ambientes digitais.
+            </p>
+            <p>Entre os recursos implementados estão:</p>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>Navegação por teclado</li>
+              <li>Compatibilidade com leitores de tela</li>
+              <li>Alto contraste e modo escuro</li>
+              <li>Ajuste de tamanho de fonte</li>
+              <li>Estrutura organizada e semântica</li>
+            </ul>
+          </ContentSection>
+
+          <SectionDivider />
+
+          <ContentSection
+            id="explore"
+            title="Explore e Descubra"
+            icon={<Compass size={22} aria-hidden="true" />}
+          >
+            <p>
+              As tecnologias assistivas estão em constante evolução e oferecem inúmeras
+              possibilidades para promover autonomia e inclusão. Conhecer essas
+              ferramentas e instituições é um passo essencial para ampliar
+              oportunidades e fortalecer a participação de pessoas com deficiência
+              visual na sociedade.
             </p>
             <p>
-              O objetivo central é identificar dificuldades, limitações e falhas nessas tecnologias,
-              bem como em sua divulgação, além de contribuir para torná-las mais conhecidas entre o público
-              que pode se beneficiar de seu uso.
-            </p>
-            <p>
-              A partir de um estudo aprofundado das tecnologias disponíveis e da realização de testes
-              aplicados com pessoas com deficiência visual, são analisados os pontos positivos e negativos
-              de cada ferramenta, possibilitando, assim, a proposição de melhorias.
-            </p>
-            <p>
-              Por fim, foi desenvolvido um portal virtual voltado à divulgação dessas tecnologias,
-              consistindo em um site inclusivo e informativo. O portal foi elaborado com base em princípios
-              de design inclusivo, com o objetivo de exemplificar boas práticas de acessibilidade digital,
-              além de disponibilizar conteúdos relevantes sobre as tecnologias assistivas atuais.
+              Explore os recursos disponíveis, acesse os links, conheça os cursos e
+              compartilhe essas informações. Quanto maior a divulgação, maior o impacto
+              positivo na construção de um ambiente mais acessível e inclusivo para
+              todos.
             </p>
           </ContentSection>
         </div>
