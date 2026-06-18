@@ -289,7 +289,7 @@ const Index = () => {
                 bem-estar, autonomia e inclusão, utilizando abordagens sensoriais,
                 educativas e de acolhimento.{" "}
                 <a
-                  href="https://serenidadedotoque.org/"
+                  href="https://serenidadedotoque.com.br/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-primary underline underline-offset-4 hover:no-underline font-semibold"
